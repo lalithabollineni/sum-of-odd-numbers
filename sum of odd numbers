@@ -1,0 +1,12 @@
+def sum_of_odd_numbers(start, end):
+    sum_odd = 0
+    for num in range(start, end + 1):
+        if num % 2 != 0:
+            sum_odd += num
+    return sum_odd
+
+start_num = int(input("Enter the start number: "))
+end_num = int(input("Enter the end number: "))
+
+result = sum_of_odd_numbers(start_num, end_num)
+print("Sum of odd numbers:", result)
